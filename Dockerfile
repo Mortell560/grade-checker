@@ -6,8 +6,10 @@ LABEL description="A simple grade checker for students at polytech to check thei
 ENV PYTHONUNBUFFERED=1
 ENV OASIS_USERNAME=""
 ENV OASIS_PASSWORD=""
-ENV OASIS_BASE_URL="https://polytech-saclay.oasis.aouka.org/"
+ENV OASIS_BASE_URL="https://polytech-saclay.oasis.aouka.org"
 ENV DATABASE_PATH="/app/database.db"
+ENV WEBHOOK_URL=""
+ENV SYNC_INTERVAL_SECONDS=3600
 
 WORKDIR /app
 
