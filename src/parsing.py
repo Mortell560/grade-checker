@@ -33,10 +33,8 @@ def parse_grades(html_content: str) -> list[Grade]:
 
             module_div = cells[0].select_one("div.courseLine")
             module_code = _clean_text(module_div.get("data-code", "")) if module_div else ""
-            if not module_code:
-                # Fallback: try to parse the first token in the cell.
-                module_code = _cell_text(cells[0]).split(" ")[0]
 
+            module_code = _cell_text(cells[0])
             name = _cell_text(cells[1])
             date = _cell_text(cells[2])
             note = _cell_text(cells[3])
