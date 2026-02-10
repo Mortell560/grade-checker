@@ -7,7 +7,7 @@ ENV PYTHONUNBUFFERED=1
 ENV OASIS_LOGIN=""
 ENV OASIS_PASSWORD=""
 ENV OASIS_BASE_URL="https://polytech-saclay.oasis.aouka.org"
-ENV DATABASE_PATH="/app/database.db"
+ENV DB_PATH="/app/database.db"
 ENV WEBHOOK_URL=""
 ENV SYNC_INTERVAL_SECONDS=3600
 
