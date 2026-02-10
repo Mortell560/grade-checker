@@ -4,7 +4,7 @@ LABEL maintainer="Mortell560"
 LABEL description="A simple grade checker for students at polytech to check their grades on the go."
 
 ENV PYTHONUNBUFFERED=1
-ENV OASIS_USERNAME=""
+ENV OASIS_LOGIN=""
 ENV OASIS_PASSWORD=""
 ENV OASIS_BASE_URL="https://polytech-saclay.oasis.aouka.org"
 ENV DATABASE_PATH="/app/database.db"
